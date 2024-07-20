@@ -13,14 +13,6 @@ import pyqtgraph as pg
 import multiprocessing as mp
 import time
 
-ll = ['/home/vadter/.local/bin']
-
-if (sys.path.count(ll) == 0):
-
-    sys.path = sys.path + ll
-
-import optelems3 as oe
-
 #%% Funcs
 
 def updateGraph(qu1):
