@@ -9,14 +9,6 @@ import numpy as np, pylab as pl, sys, os
 # import pyhantek
 import pyhantek6022BE as pyhantek
 
-ll = ['/home/vadter/.local/bin']
-
-if (sys.path.count(ll) == 0):
-
-    sys.path = sys.path + ll
-
-import optelems3 as oe
-
 #%% Settings
 
 SR = 16_000_000 # samples / s per channel
@@ -76,8 +68,6 @@ pl.grid(True)
 
 pl.xlabel('Time, ms')
 pl.ylabel('U, Volts')
-
-oe.CoordsToConsol()
 
 pl.show()
 
